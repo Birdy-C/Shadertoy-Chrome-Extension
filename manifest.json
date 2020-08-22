@@ -1,0 +1,21 @@
+{
+  "name": "Shadertoy+",
+  "version": "1.0",
+  "description": "Help your creation with Shadertoy!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.shadertoy.com/view/*", "https://*.shadertoy.com/new"],
+      "js": ["injectCodeStyle.js"]
+    }
+  ],
+  "icons": {
+    "128": "images/shadertoyplus128.png"
+  },
+  "manifest_version": 2
+}
