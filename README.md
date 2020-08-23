@@ -1,6 +1,6 @@
 # Shadertoy-Chrome-Extension
 
-- [ ] Change code style
+- [x] Change code style
 - [ ] Change Web Style
 - [ ] different style for build-in type
 - [ ] Guidance for build-in type
@@ -11,6 +11,12 @@
 - [ ] Simple error detection
 - [ ] Save
 - [ ] Load
+
+
+
+## Instruction
+
+
 
 
 

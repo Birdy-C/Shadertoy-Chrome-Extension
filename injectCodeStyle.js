@@ -20,7 +20,12 @@ function constructOptions(kCodeStyle) {
     newItem.id = "codeThemeStyle";
     newItem.onchange = updateCodeStyle;
     list.insertBefore(newItem, list.children[1]);
-    
+
+    {
+        var option = document.createElement("option");
+        option.text = 'default';
+        newItem.add(option);
+    }
     for (let item of kCodeStyle) {
         var option = document.createElement("option");
         option.text = item;
