@@ -5,6 +5,10 @@
 'use strict';
 
 chrome.runtime.onInstalled.addListener(function() {
+  chrome.storage.sync.set({codestyle: 0}, function() {
+    console.log('Default type set');
+  });
+
   chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
     chrome.declarativeContent.onPageChanged.addRules([{
       conditions: [new chrome.declarativeContent.PageStateMatcher({
