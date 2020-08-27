@@ -1,0 +1,20 @@
+download file
+https://stackoverflow.com/questions/2897619/using-html5-javascript-to-generate-and-save-a-file
+
+   editor.on("keyup", function (cm, event) {
+        if (!cm.state.completionActive && event.keyCode >= 48 && event.keyCode <= 90) {
+            CodeMirror.commands.autocomplete(cm, null, {completeSingle: false});
+        }
+    });
+
+
+gShaderToy.mCodeEditor.on("keyup", function (cm, event) {
+    if (!cm.state.completionActive && event.keyCode >= 48 && event.keyCode <= 90) {
+        CodeMirror.commands.autocomplete(cm, null, {completeSingle: false});
+    }
+});
+
+
+editor.execCommand("autocomplete")
+
+gShaderToy.mCodeEditor.execCommand("autocomplete")

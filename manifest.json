@@ -2,7 +2,7 @@
   "name": "Shadertoy+",
   "version": "1.0",
   "description": "Help your creation with Shadertoy!",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": ["declarativeContent", "storage"],
   "options_page": "options.html",
   "background": {
     "scripts": ["background.js"],
@@ -10,8 +10,9 @@
   },
   "content_scripts": [
     {
+      "run_at": "document_end",
       "matches": ["https://*.shadertoy.com/view/*", "https://*.shadertoy.com/new"],
-      "js": ["injectCodeStyle.js"]
+      "js": ["injectCodeStyle.js", "injectAutoComplete.js", "inject.js"]
     }
   ],
   "icons": {

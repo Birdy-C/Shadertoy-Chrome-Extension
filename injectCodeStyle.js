@@ -56,11 +56,12 @@ function updateCodeStyle() {
     });
 }
 
-chrome.storage.sync.get('codestyle', function (data) {
-    storedCodeStyle = data.codestyle;
-    console.log(storedCodeStyle);
-    constructLink(kCodeStyle);
-    constructOptions(kCodeStyle);
-    injectJS();
-});
-
+function injectCodeStyle() {
+    chrome.storage.sync.get('codestyle', function (data) {
+        storedCodeStyle = data.codestyle;
+        console.log(storedCodeStyle);
+        constructLink(kCodeStyle);
+        constructOptions(kCodeStyle);
+        injectJS();
+    });
+}
