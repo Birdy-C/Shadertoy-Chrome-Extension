@@ -1,6 +1,6 @@
 {
   "name": "Shadertoy+",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Help your creation with Shadertoy!",
   "permissions": ["declarativeContent", "storage"],
   "options_page": "options.html",
