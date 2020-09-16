@@ -70,8 +70,6 @@ gShaderToy.mCodeEditor.on("keyup", function (cm, event) {\n\
   });\n\
 });'
     document.body.appendChild(scr);
-    console.log("aaaa");
-
 }
 
 function injectAutoComplete() {

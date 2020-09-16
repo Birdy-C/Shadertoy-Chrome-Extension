@@ -1,6 +1,6 @@
 {
   "name": "Shadertoy+",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Help your creation with Shadertoy!",
   "permissions": ["declarativeContent", "storage"],
   "options_page": "options.html",
@@ -12,7 +12,7 @@
     {
       "run_at": "document_end",
       "matches": ["https://*.shadertoy.com/view/*", "https://*.shadertoy.com/new"],
-      "js": ["injectCodeStyle.js", "injectAutoComplete.js", "inject.js"]
+      "js": ["injectCodeStyle.js", "injectAutoComplete.js", "injectColorPicker.js", "inject.js"]
     }
   ],
   "icons": {
